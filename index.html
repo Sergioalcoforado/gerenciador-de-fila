@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Imports -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="imagem/png" href="imagens/icons/FERB-icon.png" />
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+    <title>FERB</title>
+
+    <script src="funcoes.js" async></script>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="nome-banco">
+                <img src="imagens/FERB-sem-texto.png" width="100px" alt="FERB">
+                Fraternidade Espírita Rosa Branca
+            </div>
+        </header>
+
+        <div class="content">
+
+            <div class="senha-chamada">
+                <h1 id="visor-tela">--</h1><br>
+                <div class="conteudo-senha-chamada">
+                    Dirigir-se à <span id="numero-caixa" class="conteudo-caixa"> -- </span>
+                </div>
+                
+            </div>
+
+            <div class="container-final">
+
+                <div class="para-clientes">                     
+                    
+                    <div class="para-cliente">
+                        <h5 class="title-content-final">
+                            <!-- para clientes -->
+                        </h5>
+                        <h1 class="subtitle-content-final">Escolha o tipo de atendimento:</h1>
+                        <div class="grupo-de-botoes">
+                            <button id="btn-maca" class="botoes"> 
+                                Maca
+                            </button>
+    
+                            <button id="btn-mentor" class="botoes"> 
+                                Mentor
+                            </button>
+
+                            <button id="btn-passe" class="botoes"> 
+                                Passe
+                            </button>
+                        </div>  
+                    </div>
+
+                    <div class="content-final-div">
+                        Sua senha é:
+                        <h1 id="senha-clientes">--</h1>
+                    </div>  
+
+                </div>
+    
+                <div class="para-caixas">
+
+                    <h5 class="title-content-final">
+                        <!-- para caixas -->
+                    </h5>
+
+                    <h1 class="subtitle-content-final">Clique para chamar uma senha:</h1>
+                    
+                    <div id="buttons-caixa" class="grupo-de-botoes">
+                        <button id="Maca" class="botoes" onclick="playSound()">Maca </button>
+                           
+                        <button id="Mentor" class="botoes" onclick="playSound()">Mentor</button> 
+                                  
+                        <button id="Passe" class="botoes" onclick="playSound()">Passe</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    function playSound() {
+      var audio = new Audio('415510__inspectorj__bell-counter-a.wav');
+      audio.play();
+    }
+</script>
+
+</body>
+</html>

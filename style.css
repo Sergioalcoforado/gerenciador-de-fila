@@ -1,0 +1,154 @@
+/* Design by Guilherme S barros */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--branco);
+}
+
+body{
+    --fundo: rgba(0, 119, 255, 0.88);
+    --branco: rgb(255, 255, 255);
+    --yellow: rgb(241, 181, 14);
+    --fundo-div: rgb(6, 9, 153);
+    background: var(--fundo);
+}
+
+.container header{
+    background: var(--fundo-div);
+    height: 70px ;
+    margin-top: 0.75rem;
+}
+
+.nome-banco{ 
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    padding: 10px 0px 30px;
+    font-weight: 800;
+    
+}
+
+.senha-chamada{
+    padding: 2rem 0;
+    width: 90%;
+    margin: 1rem auto;
+    background: var(--fundo-div);
+    text-align: center;
+    border-radius:20px;
+}
+
+.senha-chamada h1{
+    font-size: 8rem;   
+    margin-bottom: 0%; 
+    color:rgb(241, 181, 14)
+
+}
+
+.conteudo-senha-chamada{
+    
+    padding-bottom: 2rem;
+    color: rgb(177, 177, 177);
+    font-size: 2rem;   
+}
+
+.conteudo-caixa{
+    font-size: 2.3rem;
+    padding-left: .6rem;
+}
+
+.container-final{
+    display: grid;
+    grid-template-columns: 60% 30%;
+    justify-content: center;
+}
+
+.para-clientes{
+    margin-right: 10px;
+    background: var(--fundo-div);
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;    
+}
+
+.para-caixas{
+    padding: 2rem 2rem;
+    background: var(--fundo-div);
+    margin-left: 10px;
+    border-radius: 20px;
+    display: grid;
+}
+
+.title-content-final{
+    font-weight: 400;
+    color: rgb(141, 141, 141);
+}
+
+.subtitle-content-final{
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.botoes, .botoes-cliente, .botoes-cliente-maior{
+    font-size: medium;
+    color: rgb(33, 36, 32);
+    text-decoration: none;
+    transition: filter 0.3s;
+    border-radius: 10px;
+    align-items: center;
+    height: 3rem;
+    border: none;
+}
+
+#btn-mentor, #btn-maca, #btn-passe{
+    margin-top: 2rem;
+    width: 49%;
+    align-items: center;
+}
+
+#btn-passe{
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.content-final-div h1{
+    font-size: 4rem;
+    color: gray;
+}
+
+.para-caixas h1{
+    margin-top: -2.45rem;
+}
+
+.para-caixas div{
+    display: flex;
+    justify-content: center;
+}
+
+#buttons-caixa{
+ margin-top: -28px;
+}
+
+.para-caixas .grupo-de-botoes button{
+    margin-left: 0.5rem;
+}
+
+button{
+    width: 40%;
+}
+
+button:hover{
+    background-color: rgb(7, 21, 211);
+    background-color: rgb(241, 181, 14);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+
